@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css?family=Comfortaa');
+@import url('https://fonts.googleapis.com/css?family=Francois+One');
+
+*{
+    font-family: 'Comfortaa', cursive;
+}
+
+.container-fluid,.container{
+    color: white;
+}
+
+@keyframes logo{
+    0%{
+        color:red;
+    }
+    15%{
+        color:orange ;
+    }
+    30%{
+        color:yellow;
+    }
+    45%{
+        color:lime;
+    }
+    60%{
+        color:deepskyblue;
+    }
+    75%{
+        color:blue;
+    }
+    90%{
+        color:mediumvioletred;
+    }
+    100%{
+        color:red;
+    }
+}
+.header{
+    font-family: 'Francois One', sans-serif;transition: all 0.5s;font-size: 65px;text-align: center;max-width: 40%; margin: auto; text-align: center; animation-name:logo; animation-duration: 20s; animation-iteration-count: infinite; animation-timing-function: ease; text-shadow: black 0 0 2px;
+}
+.header:hover{
+    opacity: 0.3;
+}
+
+#cursorflash{animation-name: flash; animation-duration: 1.5s; animation-iteration-count: infinite; animation-timing-function: linear;}
+
+.url{position: relative; text-align: center; top: -15;text-decoration:none;}
+
+.link{
+    font-family: coder;
+    font-size: 20px;
+    text-decoration: none;
+    color: #00bfff;
+    transition: all 0.3s;
+    text-shadow: black 0 0 2px;
+}
+.link:before{
+    color:limegreen;
+    content:" /*";
+}
+.link:after{
+    color:limegreen;
+    content:"*/ " ;
+}
+.link:hover{
+    text-decoration: none;
+    color:limegreen;
+    font-size: 22px;
+}
+.link:focus{
+    color: #00bfff;
+}
+
+body{
+    /* background:url(../img/bg.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; */
+    background-color: black;
+    height: 100px;
+}
+
+.hidden{
+    display: none;
+}
+
+a.nav-link,
+a.nav-link:link,
+a.nav-link:visited,
+a.nav-link:hover,
+a.nav-link:active {
+    text-decoration: none;
+    color: #fff;
+}
